@@ -4,14 +4,14 @@ mod api 'booklore-api/Justfile'
 mod ui 'frontend/Justfile'
 mod release 'tools/release/Justfile'
 
-compose_file := env_var_or_default('GRIMMORY_COMPOSE_FILE', 'dev.docker-compose.yml')
+compose_file := env_var_or_default('TOBYSHELF_COMPOSE_FILE', 'dev.docker-compose.yml')
 compose_cmd := 'docker compose -f ' + compose_file
 db_service := 'backend_db'
-local_image_tag := env_var_or_default('GRIMMORY_IMAGE_TAG', 'grimmory:local')
-local_container_name := 'grimmory-local'
-local_db_url := 'jdbc:mariadb://localhost:3366/grimmory?createDatabaseIfNotExist=true'
-local_db_user := 'grimmory'
-local_db_password := 'grimmory'
+local_image_tag := env_var_or_default('TOBYSHELF_IMAGE_TAG', 'tobyshelf:local')
+local_container_name := 'tobyshelf-local'
+local_db_url := 'jdbc:mariadb://localhost:3366/tobyshelf?createDatabaseIfNotExist=true'
+local_db_user := 'tobyshelf'
+local_db_password := 'tobyshelf'
 
 # Show the primary developer and agent command surface, including submodule recipes.
 help:

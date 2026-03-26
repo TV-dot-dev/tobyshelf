@@ -322,8 +322,8 @@ export interface User {
     canBulkRegenerateCover: boolean;
     canMoveOrganizeFiles: boolean;
     canBulkLockUnlockMetadata: boolean;
-    canBulkResetGrimmoryReadProgress?: boolean;
-    // TODO(grimmory-cleanup): Remove once the backend no longer serves the legacy Booklore permission name.
+    canBulkResetTobyshelfReadProgress?: boolean;
+    // TODO(tobyshelf-cleanup): Remove once the backend no longer serves the legacy Booklore permission name.
     canBulkResetBookloreReadProgress?: boolean;
     canBulkResetKoReaderReadProgress?: boolean;
     canBulkResetBookReadStatus?: boolean;
@@ -475,8 +475,8 @@ export class UserService {
       ...user,
       permissions: {
         ...permissions,
-        canBulkResetGrimmoryReadProgress: permissions.canBulkResetGrimmoryReadProgress ?? permissions.canBulkResetBookloreReadProgress,
-        canBulkResetBookloreReadProgress: permissions.canBulkResetBookloreReadProgress ?? permissions.canBulkResetGrimmoryReadProgress,
+        canBulkResetTobyshelfReadProgress: permissions.canBulkResetTobyshelfReadProgress ?? permissions.canBulkResetBookloreReadProgress,
+        canBulkResetBookloreReadProgress: permissions.canBulkResetBookloreReadProgress ?? permissions.canBulkResetTobyshelfReadProgress,
       }
     };
   }
@@ -487,24 +487,24 @@ export class UserService {
 
     if ('permissions' in payloadRecord && payloadRecord['permissions'] && typeof payloadRecord['permissions'] === 'object') {
       const permissions = payloadRecord['permissions'] as User['permissions'];
-      // TODO(grimmory-cleanup): Drop the legacy Booklore permission alias after the backend accepts only Grimmory names.
+      // TODO(tobyshelf-cleanup): Drop the legacy Booklore permission alias after the backend accepts only Tobyshelf names.
       const canBulkResetReadProgress =
-        permissions.canBulkResetGrimmoryReadProgress ?? permissions.canBulkResetBookloreReadProgress;
+        permissions.canBulkResetTobyshelfReadProgress ?? permissions.canBulkResetBookloreReadProgress;
 
       nextPayload['permissions'] = {
         ...permissions,
-        canBulkResetGrimmoryReadProgress: canBulkResetReadProgress,
+        canBulkResetTobyshelfReadProgress: canBulkResetReadProgress,
         canBulkResetBookloreReadProgress: canBulkResetReadProgress,
       };
     }
 
-    if ('permissionBulkResetGrimmoryReadProgress' in payloadRecord || 'permissionBulkResetBookloreReadProgress' in payloadRecord) {
-      // TODO(grimmory-cleanup): Drop the flat Booklore form field alias after the create-user API accepts only Grimmory names.
+    if ('permissionBulkResetTobyshelfReadProgress' in payloadRecord || 'permissionBulkResetBookloreReadProgress' in payloadRecord) {
+      // TODO(tobyshelf-cleanup): Drop the flat Booklore form field alias after the create-user API accepts only Tobyshelf names.
       const canBulkResetReadProgress =
-        (payloadRecord['permissionBulkResetGrimmoryReadProgress'] as boolean | undefined)
+        (payloadRecord['permissionBulkResetTobyshelfReadProgress'] as boolean | undefined)
         ?? (payloadRecord['permissionBulkResetBookloreReadProgress'] as boolean | undefined);
 
-      nextPayload['permissionBulkResetGrimmoryReadProgress'] = canBulkResetReadProgress;
+      nextPayload['permissionBulkResetTobyshelfReadProgress'] = canBulkResetReadProgress;
       nextPayload['permissionBulkResetBookloreReadProgress'] = canBulkResetReadProgress;
     }
 

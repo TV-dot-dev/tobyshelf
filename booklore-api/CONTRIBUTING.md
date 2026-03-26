@@ -1,4 +1,4 @@
-# Contributing to Grimmory API
+# Contributing to Tobyshelf API
 
 This document covers backend-specific development and review expectations for `booklore-api`.
 

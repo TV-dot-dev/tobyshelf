@@ -1,7 +1,7 @@
 {
-  "name": "grimmory-release-tooling",
+  "name": "tobyshelf-release-tooling",
   "private": true,
-  "description": "Release automation tooling for Grimmory",
+  "description": "Release automation tooling for Tobyshelf",
   "packageManager": "yarn@4.10.3",
   "engines": {
     "node": ">=24"

@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "grimmory.fullname" . }}
+  name: {{ include "tobyshelf.fullname" . }}
   labels:
-    {{- include "grimmory.labels" . | nindent 4 }}
+    {{- include "tobyshelf.labels" . | nindent 4 }}
 spec:
   type: {{ .Values.service.type }}
   ports:
@@ -12,4 +12,4 @@ spec:
       protocol: TCP
       name: http
   selector:
-    {{- include "grimmory.selectorLabels" . | nindent 4 }}
+    {{- include "tobyshelf.selectorLabels" . | nindent 4 }}

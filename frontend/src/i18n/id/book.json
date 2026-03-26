@@ -92,7 +92,7 @@
       "moreActions": "",
       "organizeFile": "",
       "readStatus": "",
-      "resetGrimmoryProgress": "",
+      "resetTobyshelfProgress": "",
       "resetKOReaderProgress": "",
       "book": "",
       "loading": ""
@@ -116,10 +116,10 @@
       "readStatusFailedSummary": "",
       "readStatusFailedDetail": "",
       "progressResetSummary": "",
-      "progressResetGrimmoryDetail": "",
+      "progressResetTobyshelfDetail": "",
       "progressResetKOReaderDetail": "",
       "progressResetFailedSummary": "",
-      "progressResetGrimmoryFailedDetail": "",
+      "progressResetTobyshelfFailedDetail": "",
       "progressResetKOReaderFailedDetail": "",
       "coverRegenSuccessSummary": "",
       "coverRegenSuccessDetail": "",
@@ -200,7 +200,7 @@
       "setContentRating": "",
       "clearContentRating": "",
       "removeFromAllShelves": "",
-      "resetGrimmoryProgress": "",
+      "resetTobyshelfProgress": "",
       "resetKOReaderProgress": ""
     },
     "confirm": {
@@ -216,7 +216,7 @@
       "clearContentRatingHeader": "",
       "unshelveMessage": "",
       "unshelveHeader": "",
-      "resetGrimmoryMessage": "",
+      "resetTobyshelfMessage": "",
       "resetKOReaderMessage": "",
       "resetHeader": ""
     },
@@ -241,7 +241,7 @@
       "unshelveSuccessDetail": "",
       "unshelveFailedDetail": "",
       "progressResetSummary": "",
-      "grimmoryProgressResetDetail": "",
+      "tobyshelfProgressResetDetail": "",
       "koreaderProgressResetDetail": "",
       "failedSummary": "",
       "progressResetFailedDetail": ""
@@ -253,7 +253,7 @@
       "settingContentRating": "",
       "clearingContentRating": "",
       "removingFromShelves": "",
-      "resettingGrimmoryProgress": "",
+      "resettingTobyshelfProgress": "",
       "resettingKOReaderProgress": ""
     }
   },

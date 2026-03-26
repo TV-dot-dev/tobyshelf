@@ -1,10 +1,10 @@
-# Contributing to Grimmory
+# Contributing to Tobyshelf
 
-Thanks for your interest in contributing to Grimmory! Whether you're fixing bugs, adding features, improving documentation, or asking questions, every contribution helps.
+Thanks for your interest in contributing to Tobyshelf! Whether you're fixing bugs, adding features, improving documentation, or asking questions, every contribution helps.
 
-## What is Grimmory?
+## What is Tobyshelf?
 
-**Grimmory** is a self-hostable digital library platform for managing and reading books and comics. It is the community-maintained successor to Booklore.
+**Tobyshelf** is a self-hostable digital library platform for managing and reading books and comics. It is the community-maintained successor to Booklore.
 
 **Tech Stack:**
 
@@ -35,7 +35,7 @@ Thanks for your interest in contributing to Grimmory! Whether you're fixing bugs
 
 ## Before You Start
 
-> **Issue first, PR second.** Every pull request must be linked to an approved issue. If you want to work on something, [open an issue](https://github.com/grimmory-tools/grimmory/issues/new) (or find an existing one) and wait for a maintainer to approve it before writing code. PRs submitted without a linked, approved issue will be closed.
+> **Issue first, PR second.** Every pull request must be linked to an approved issue. If you want to work on something, [open an issue](https://github.com/tobyshelf-tools/tobyshelf/issues/new) (or find an existing one) and wait for a maintainer to approve it before writing code. PRs submitted without a linked, approved issue will be closed.
 
 This protects both your time and ours. It ensures that the work is actually wanted and that you're heading in the right direction before you invest effort.
 
@@ -51,8 +51,8 @@ This protects both your time and ours. It ensures that the work is actually want
 
 Not sure where to begin? Look for issues labeled:
 
-- [`good first issue`](https://github.com/grimmory-tools/grimmory/labels/good%20first%20issue) - small, well-scoped tasks ideal for newcomers
-- [`help wanted`](https://github.com/grimmory-tools/grimmory/labels/help%20wanted) - tasks where maintainers would appreciate a hand
+- [`good first issue`](https://github.com/tobyshelf-tools/tobyshelf/labels/good%20first%20issue) - small, well-scoped tasks ideal for newcomers
+- [`help wanted`](https://github.com/tobyshelf-tools/tobyshelf/labels/help%20wanted) - tasks where maintainers would appreciate a hand
 
 ---
 
@@ -60,12 +60,12 @@ Not sure where to begin? Look for issues labeled:
 
 ### Fork and Clone
 
-First, [fork the repository](https://github.com/grimmory-tools/grimmory/fork) on GitHub, then clone your fork locally:
+First, [fork the repository](https://github.com/tobyshelf-tools/tobyshelf/fork) on GitHub, then clone your fork locally:
 
 ```bash
-git clone https://github.com/<your-username>/grimmory.git
-cd grimmory
-git remote add upstream https://github.com/grimmory-tools/grimmory.git
+git clone https://github.com/<your-username>/tobyshelf.git
+cd tobyshelf
+git remote add upstream https://github.com/tobyshelf-tools/tobyshelf.git
 ```
 
 ### Keep Your Fork in Sync
@@ -88,7 +88,7 @@ git push origin develop
 ### Project Structure
 
 ```
-grimmory/
+tobyshelf/
 ├── frontend/                # Angular frontend (TypeScript, PrimeNG)
 ├── booklore-api/            # Spring Boot backend (Java 25, Gradle)
 ├── deploy/                  # Compose, Helm, and Podman deployment examples
@@ -115,7 +115,7 @@ just image-build           # Build the production image locally
 ```
 
 > **Tip:** Agents and automation should prefer `just` recipes when a suitable recipe exists so local workflows and documented commands stay aligned.
-> **Tip:** Set `GRIMMORY_COMPOSE_FILE=/path/to/compose.yml` if you need the root `just` recipes to target a different development compose file.
+> **Tip:** Set `TOBYSHELF_COMPOSE_FILE=/path/to/compose.yml` if you need the root `just` recipes to target a different development compose file.
 
 ### Component Guides
 
@@ -166,9 +166,9 @@ For full control over each component or IDE integration (debugging, hot-reload, 
 Start MariaDB and create the database:
 
 ```sql
-CREATE DATABASE IF NOT EXISTS grimmory;
-CREATE USER 'grimmory_user'@'localhost' IDENTIFIED BY 'your_password';
-GRANT ALL PRIVILEGES ON grimmory.* TO 'grimmory_user'@'localhost';
+CREATE DATABASE IF NOT EXISTS tobyshelf;
+CREATE USER 'tobyshelf_user'@'localhost' IDENTIFIED BY 'your_password';
+GRANT ALL PRIVILEGES ON tobyshelf.* TO 'tobyshelf_user'@'localhost';
 FLUSH PRIVILEGES;
 ```
 
@@ -186,8 +186,8 @@ app:
 spring:
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
-    url: jdbc:mariadb://localhost:3306/grimmory?createDatabaseIfNotExist=true
-    username: grimmory_user
+    url: jdbc:mariadb://localhost:3306/tobyshelf?createDatabaseIfNotExist=true
+    username: tobyshelf_user
     password: your_password
 ```
 
@@ -271,14 +271,14 @@ just dev-down
 If you want to test a different architecture (e.g., ARM64 on an x86 machine):
 
 ```bash
-just image-build linux/arm64 grimmory:local-arm64
+just image-build linux/arm64 tobyshelf:local-arm64
 ```
 
 ### Tips
 
 - **Memory:** The image defaults to 60% of container RAM. Limit with `--memory=512m` or similar to simulate constrained environments.
 - **Volumes:** Mount your book directories to `/books`, data/config to `/app/data`, and an optional bookdrop folder to `/bookdrop`. The example above reuses the dev stack's `shared/` folders so your existing library and covers are available.
-- **Logs:** Application logs are written to stdout. Use `docker logs -f grimmory-local` to follow them.
+- **Logs:** Application logs are written to stdout. Use `docker logs -f tobyshelf-local` to follow them.
 
 ---
 
@@ -357,7 +357,7 @@ Before opening your PR:
 - [ ] PR contains a single logical change (one bug fix OR one feature)
 - [ ] No unrelated refactors, style changes, or "improvements" are bundled in
 - [ ] **PR is reasonably sized.** PRs with 1000+ changed lines will be closed without review. Break large changes into small, focused PRs.
-- [ ] **For user-facing features:** include the required docs updates in this repo or in the active Grimmory docs surface
+- [ ] **For user-facing features:** include the required docs updates in this repo or in the active Tobyshelf docs surface
 
 > When you open your PR on GitHub, a **PR template** will appear. Fill it out completely, including test output and screenshots.
 
@@ -389,13 +389,13 @@ Detailed coding conventions now live with each project:
 
 ## Reporting Bugs
 
-1. **Search [existing issues](https://github.com/grimmory-tools/grimmory/issues)** to avoid duplicates.
+1. **Search [existing issues](https://github.com/tobyshelf-tools/tobyshelf/issues)** to avoid duplicates.
 2. **Open a new issue** with the `bug` label including:
    - Clear, descriptive title (e.g., "Book import fails with PDF files over 100MB")
    - Steps to reproduce
    - Expected vs. actual behavior
    - Screenshots or error logs (if applicable)
-   - Environment details (OS, browser, Grimmory version)
+   - Environment details (OS, browser, Tobyshelf version)
 
 **Example:**
 
@@ -411,7 +411,7 @@ Steps to Reproduce:
 Expected: Title should persist after refresh
 Actual: Title reverts to original value
 
-Environment: Chrome 120, macOS 14.2, Grimmory 1.2.0
+Environment: Chrome 120, macOS 14.2, Tobyshelf 1.2.0
 ```
 
 ---
@@ -419,7 +419,7 @@ Environment: Chrome 120, macOS 14.2, Grimmory 1.2.0
 ## Community & Support
 
 - **Discord:** [Join the server](https://discord.gg/9YJ7HB4n8T) for questions and discussion
-- **GitHub Issues:** [Report bugs or request features](https://github.com/grimmory-tools/grimmory/issues)
+- **GitHub Issues:** [Report bugs or request features](https://github.com/tobyshelf-tools/tobyshelf/issues)
 
 ---
 
@@ -444,8 +444,8 @@ Instances of unacceptable behavior may result in temporary or permanent ban from
 
 ## License
 
-Grimmory is licensed under the [AGPL-3.0 License](./LICENSE). By contributing, you agree that your contributions will be licensed under the same terms.
+Tobyshelf is licensed under the [AGPL-3.0 License](./LICENSE). By contributing, you agree that your contributions will be licensed under the same terms.
 
 ---
 
-Thank you for being part of the Grimmory community!
+Thank you for being part of the Tobyshelf community!

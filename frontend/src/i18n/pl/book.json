@@ -92,7 +92,7 @@
       "moreActions": "Więcej akcji",
       "organizeFile": "Organizuj plik",
       "readStatus": "Status czytania",
-      "resetGrimmoryProgress": "Resetuj postęp Grimmory",
+      "resetTobyshelfProgress": "Resetuj postęp Tobyshelf",
       "resetKOReaderProgress": "Resetuj postęp KOReader",
       "book": "Książka",
       "loading": "Ładowanie..."
@@ -113,10 +113,10 @@
       "readStatusFailedSummary": "Aktualizacja nie powiodła się",
       "readStatusFailedDetail": "Nie udało się zaktualizować statusu czytania.",
       "progressResetSummary": "Postęp zresetowany",
-      "progressResetGrimmoryDetail": "Postęp czytania w Grimmory został zresetowany.",
+      "progressResetTobyshelfDetail": "Postęp czytania w Tobyshelf został zresetowany.",
       "progressResetKOReaderDetail": "Postęp czytania w KOReader został zresetowany.",
       "progressResetFailedSummary": "Niepowodzenie",
-      "progressResetGrimmoryFailedDetail": "Nie udało się zresetować postępu Grimmory.",
+      "progressResetTobyshelfFailedDetail": "Nie udało się zresetować postępu Tobyshelf.",
       "progressResetKOReaderFailedDetail": "Nie udało się zresetować postępu KOReader.",
       "coverRegenSuccessSummary": "Sukces",
       "coverRegenSuccessDetail": "Rozpoczęto ponowne generowanie okładki",
@@ -197,7 +197,7 @@
       "setContentRating": "Ustaw ocenę treści",
       "clearContentRating": "Wyczyść ocenę treści",
       "removeFromAllShelves": "Usuń ze wszystkich półek",
-      "resetGrimmoryProgress": "Resetuj postęp Grimmory",
+      "resetTobyshelfProgress": "Resetuj postęp Tobyshelf",
       "resetKOReaderProgress": "Resetuj postęp KOReader"
     },
     "confirm": {
@@ -213,7 +213,7 @@
       "clearContentRatingHeader": "Potwierdź wyczyszczenie oceny treści",
       "unshelveMessage": "Czy na pewno chcesz usunąć {{ count }} książkę/książki/książek ze WSZYSTKICH ich półek?",
       "unshelveHeader": "Potwierdź usunięcie z półek",
-      "resetGrimmoryMessage": "Czy na pewno chcesz zresetować postęp czytania w Grimmory dla {{ count }} książki/książek?",
+      "resetTobyshelfMessage": "Czy na pewno chcesz zresetować postęp czytania w Tobyshelf dla {{ count }} książki/książek?",
       "resetKOReaderMessage": "Czy na pewno chcesz zresetować postęp czytania w KOReader dla {{ count }} książki/książek?",
       "resetHeader": "Potwierdź reset"
     },
@@ -238,7 +238,7 @@
       "unshelveSuccessDetail": "Książki usunięte ze wszystkich półek",
       "unshelveFailedDetail": "Nie udało się zaktualizować półek książek",
       "progressResetSummary": "Postęp zresetowany",
-      "grimmoryProgressResetDetail": "Postęp czytania w Grimmory został zresetowany.",
+      "tobyshelfProgressResetDetail": "Postęp czytania w Tobyshelf został zresetowany.",
       "koreaderProgressResetDetail": "Postęp czytania w KOReader został zresetowany.",
       "failedSummary": "Niepowodzenie",
       "progressResetFailedDetail": "Nie udało się zresetować postępu."
@@ -250,7 +250,7 @@
       "settingContentRating": "Ustawianie oceny treści dla {{ count }} książki/książek...",
       "clearingContentRating": "Czyszczenie oceny treści dla {{ count }} książki/książek...",
       "removingFromShelves": "Usuwanie {{ count }} książki/książek z półek...",
-      "resettingGrimmoryProgress": "Resetowanie postępu Grimmory dla {{ count }} książki/książek...",
+      "resettingTobyshelfProgress": "Resetowanie postępu Tobyshelf dla {{ count }} książki/książek...",
       "resettingKOReaderProgress": "Resetowanie postępu KOReader dla {{ count }} książki/książek..."
     }
   },

@@ -1,5 +1,5 @@
 name: Feature Request
-description: Propose a significant new feature for Grimmory
+description: Propose a significant new feature for Tobyshelf
 labels: ["needs-triage"]
 type: Feature
 body:
@@ -22,7 +22,7 @@ body:
     id: problem
     attributes:
       label: Why Would This Be Helpful?
-      description: Help us understand the problem this solves or the value it brings to Grimmory users
+      description: Help us understand the problem this solves or the value it brings to Tobyshelf users
       placeholder: "Example: Right now, it's hard to keep track of multiple books I'm reading at once. Having a dedicated shelf with progress tracking would help me stay organized"
     validations:
       required: true

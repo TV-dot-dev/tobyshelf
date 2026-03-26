@@ -322,7 +322,7 @@ export class ReaderEventService {
   }
 
   private injectMobileSelectionStyles(doc: Document): void {
-    const styleId = 'grimmory-mobile-selection-styles';
+    const styleId = 'tobyshelf-mobile-selection-styles';
     if (doc.getElementById(styleId)) return;
 
     const style = doc.createElement('style');

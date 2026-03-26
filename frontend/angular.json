@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "grimmory": {
+    "tobyshelf": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -24,7 +24,7 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-            "outputPath": "dist/grimmory",
+            "outputPath": "dist/tobyshelf",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -100,10 +100,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "grimmory:build:production"
+              "buildTarget": "tobyshelf:build:production"
             },
             "development": {
-              "buildTarget": "grimmory:build:development"
+              "buildTarget": "tobyshelf:build:development"
             }
           },
           "defaultConfiguration": "development"

@@ -1,5 +1,5 @@
 module.exports = {
-  repositoryUrl: "https://github.com/grimmory-tools/grimmory.git",
+  repositoryUrl: "https://github.com/tobyshelf-tools/tobyshelf.git",
   branches: ["main"],
   tagFormat: "v${version}",
   plugins: [

@@ -1,7 +1,7 @@
 [Unit]
-Description=Grimmory Pod
+Description=Tobyshelf Pod
 After=network-online.target
 
 [Pod]
-PodName=grimmory
+PodName=tobyshelf
 PublishPort=6060:6060

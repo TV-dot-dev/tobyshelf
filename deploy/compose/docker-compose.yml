@@ -1,22 +1,16 @@
 services:
   # Upgrade path from Booklore:
   # Keep your existing service name, container_name, database names/users, ports,
-  # and mounted volumes. Replace only the image line(s) with Grimmory tags.
-  grimmory:
-    # Stable release example:
-    image: grimmory/grimmory:v0.38.2
-    # Convenience tag:
-    # image: grimmory/grimmory:latest
-    # Or the GHCR image:
-    # image: ghcr.io/grimmory-tools/grimmory:v0.38.2
-    # The image already embeds its own release version metadata.
-    container_name: grimmory
+  # and mounted volumes. Replace only the image line(s) with Tobyshelf tags.
+  tobyshelf:
+    image: ghcr.io/tv-dot-dev/tobyshelf:latest
+    container_name: tobyshelf
     environment:
       - USER_ID=1000
       - GROUP_ID=1000
       - TZ=Etc/UTC
-      - DATABASE_URL=jdbc:mariadb://mariadb:3306/grimmory
-      - DATABASE_USERNAME=grimmory
+      - DATABASE_URL=jdbc:mariadb://mariadb:3306/tobyshelf
+      - DATABASE_USERNAME=tobyshelf
       - DATABASE_PASSWORD=your_secure_password
       - SWAGGER_ENABLED=false
       - FORCE_DISABLE_OIDC=false
@@ -47,8 +41,8 @@ services:
       - PGID=1000
       - TZ=Etc/UTC
       - MYSQL_ROOT_PASSWORD=super_secure_password
-      - MYSQL_DATABASE=grimmory
-      - MYSQL_USER=grimmory
+      - MYSQL_DATABASE=tobyshelf
+      - MYSQL_USER=tobyshelf
       - MYSQL_PASSWORD=your_secure_password
     volumes:
       - ./config:/config

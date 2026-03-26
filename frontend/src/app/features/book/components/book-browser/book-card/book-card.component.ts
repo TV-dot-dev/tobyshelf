@@ -164,7 +164,7 @@ export class BookCardComponent implements OnInit, OnChanges {
 
     const progressParts: string[] = [];
     if (this._progressPercentage !== null) {
-      progressParts.push(`${this._progressPercentage}% (Grimmory)`);
+      progressParts.push(`${this._progressPercentage}% (Tobyshelf)`);
     }
     if (this._koProgressPercentage !== null) {
       progressParts.push(`${this._koProgressPercentage}% (KOReader)`);
@@ -601,15 +601,15 @@ export class BookCardComponent implements OnInit, OnChanges {
         }))
       },
       {
-        label: this.t.translate('book.card.menu.resetGrimmoryProgress'),
+        label: this.t.translate('book.card.menu.resetTobyshelfProgress'),
         icon: 'pi pi-undo',
         command: () => {
-          this.bookService.resetProgress(this.book.id, ResetProgressTypes.GRIMMORY).subscribe({
+          this.bookService.resetProgress(this.book.id, ResetProgressTypes.TOBYSHELF).subscribe({
             next: () => {
               this.messageService.add({
                 severity: 'success',
                 summary: this.t.translate('book.card.toast.progressResetSummary'),
-                detail: this.t.translate('book.card.toast.progressResetGrimmoryDetail'),
+                detail: this.t.translate('book.card.toast.progressResetTobyshelfDetail'),
                 life: 1500
               });
             },
@@ -617,7 +617,7 @@ export class BookCardComponent implements OnInit, OnChanges {
               this.messageService.add({
                 severity: 'error',
                 summary: this.t.translate('book.card.toast.progressResetFailedSummary'),
-                detail: this.t.translate('book.card.toast.progressResetGrimmoryFailedDetail'),
+                detail: this.t.translate('book.card.toast.progressResetTobyshelfFailedDetail'),
                 life: 1500
               });
             }

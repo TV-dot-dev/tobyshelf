@@ -1,12 +1,12 @@
 name: Documentation
-description: Suggest a documentation fix or improvement for Grimmory
+description: Suggest a documentation fix or improvement for Tobyshelf
 labels: ["needs-triage"]
 type: Documentation
 body:
   - type: markdown
     attributes:
       value: |
-        Use this template for documentation fixes, missing guides, confusing setup steps, or requests to improve the written docs around Grimmory.
+        Use this template for documentation fixes, missing guides, confusing setup steps, or requests to improve the written docs around Tobyshelf.
 
   - type: textarea
     id: problem

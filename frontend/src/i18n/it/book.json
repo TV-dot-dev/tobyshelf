@@ -92,7 +92,7 @@
       "moreActions": "Altre azioni",
       "organizeFile": "Organizza file",
       "readStatus": "Stato lettura",
-      "resetGrimmoryProgress": "Ripristina progresso Grimmory",
+      "resetTobyshelfProgress": "Ripristina progresso Tobyshelf",
       "resetKOReaderProgress": "Ripristina progresso KOReader",
       "book": "Libro",
       "loading": "Caricamento..."
@@ -113,10 +113,10 @@
       "readStatusFailedSummary": "Aggiornamento fallito",
       "readStatusFailedDetail": "Impossibile aggiornare lo stato di lettura.",
       "progressResetSummary": "Progresso ripristinato",
-      "progressResetGrimmoryDetail": "Il progresso di lettura Grimmory è stato ripristinato.",
+      "progressResetTobyshelfDetail": "Il progresso di lettura Tobyshelf è stato ripristinato.",
       "progressResetKOReaderDetail": "Il progresso di lettura KOReader è stato ripristinato.",
       "progressResetFailedSummary": "Fallito",
-      "progressResetGrimmoryFailedDetail": "Impossibile ripristinare il progresso Grimmory.",
+      "progressResetTobyshelfFailedDetail": "Impossibile ripristinare il progresso Tobyshelf.",
       "progressResetKOReaderFailedDetail": "Impossibile ripristinare il progresso KOReader.",
       "coverRegenSuccessSummary": "Successo",
       "coverRegenSuccessDetail": "Rigenerazione copertina avviata",
@@ -197,7 +197,7 @@
       "setContentRating": "Imposta classificazione contenuto",
       "clearContentRating": "Cancella classificazione contenuto",
       "removeFromAllShelves": "Rimuovi da tutti gli scaffali",
-      "resetGrimmoryProgress": "Ripristina progresso Grimmory",
+      "resetTobyshelfProgress": "Ripristina progresso Tobyshelf",
       "resetKOReaderProgress": "Ripristina progresso KOReader"
     },
     "confirm": {
@@ -213,7 +213,7 @@
       "clearContentRatingHeader": "Conferma cancellazione classificazione contenuto",
       "unshelveMessage": "Sei sicuro di voler rimuovere {{ count }} libro/i da TUTTI i loro scaffali?",
       "unshelveHeader": "Conferma rimozione dagli scaffali",
-      "resetGrimmoryMessage": "Sei sicuro di voler ripristinare il progresso di lettura Grimmory per {{ count }} libro/i?",
+      "resetTobyshelfMessage": "Sei sicuro di voler ripristinare il progresso di lettura Tobyshelf per {{ count }} libro/i?",
       "resetKOReaderMessage": "Sei sicuro di voler ripristinare il progresso di lettura KOReader per {{ count }} libro/i?",
       "resetHeader": "Conferma ripristino"
     },
@@ -238,7 +238,7 @@
       "unshelveSuccessDetail": "Libri rimossi da tutti gli scaffali",
       "unshelveFailedDetail": "Aggiornamento scaffali dei libri fallito",
       "progressResetSummary": "Progresso ripristinato",
-      "grimmoryProgressResetDetail": "Il progresso di lettura Grimmory è stato ripristinato.",
+      "tobyshelfProgressResetDetail": "Il progresso di lettura Tobyshelf è stato ripristinato.",
       "koreaderProgressResetDetail": "Il progresso di lettura KOReader è stato ripristinato.",
       "failedSummary": "Fallito",
       "progressResetFailedDetail": "Impossibile ripristinare il progresso."
@@ -250,7 +250,7 @@
       "settingContentRating": "Impostazione classificazione contenuto per {{ count }} libro/i...",
       "clearingContentRating": "Cancellazione classificazione contenuto per {{ count }} libro/i...",
       "removingFromShelves": "Rimozione di {{ count }} libro/i dagli scaffali...",
-      "resettingGrimmoryProgress": "Ripristino progresso Grimmory per {{ count }} libro/i...",
+      "resettingTobyshelfProgress": "Ripristino progresso Tobyshelf per {{ count }} libro/i...",
       "resettingKOReaderProgress": "Ripristino progresso KOReader per {{ count }} libro/i..."
     }
   },

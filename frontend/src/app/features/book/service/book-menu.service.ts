@@ -356,28 +356,28 @@ export class BookMenuService {
        });
     }
 
-    if (permissions?.canBulkResetGrimmoryReadProgress ?? permissions?.canBulkResetBookloreReadProgress) {
+    if (permissions?.canBulkResetTobyshelfReadProgress ?? permissions?.canBulkResetBookloreReadProgress) {
       items.push({
-        label: this.t.translate('book.menuService.menu.resetGrimmoryProgress'),
+        label: this.t.translate('book.menuService.menu.resetTobyshelfProgress'),
         icon: 'pi pi-undo',
         command: () => {
           this.confirmationService.confirm({
-            message: this.t.translate('book.menuService.confirm.resetGrimmoryMessage', {count}),
+            message: this.t.translate('book.menuService.confirm.resetTobyshelfMessage', {count}),
             header: this.t.translate('book.menuService.confirm.resetHeader'),
             icon: 'pi pi-exclamation-triangle',
             acceptLabel: this.t.translate('common.yes'),
             rejectLabel: this.t.translate('common.no'),
             accept: () => {
-              const loader = this.loadingService.show(this.t.translate('book.menuService.loading.resettingGrimmoryProgress', {count}));
+              const loader = this.loadingService.show(this.t.translate('book.menuService.loading.resettingTobyshelfProgress', {count}));
 
-              this.bookService.resetProgress(Array.from(selectedBooks), ResetProgressTypes.GRIMMORY)
+              this.bookService.resetProgress(Array.from(selectedBooks), ResetProgressTypes.TOBYSHELF)
                 .pipe(finalize(() => this.loadingService.hide(loader)))
                 .subscribe({
                   next: () => {
                     this.messageService.add({
                       severity: 'success',
                       summary: this.t.translate('book.menuService.toast.progressResetSummary'),
-                      detail: this.t.translate('book.menuService.toast.grimmoryProgressResetDetail'),
+                      detail: this.t.translate('book.menuService.toast.tobyshelfProgressResetDetail'),
                       life: 1500
                     });
                   },

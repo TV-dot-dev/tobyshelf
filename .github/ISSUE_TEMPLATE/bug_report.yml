@@ -1,5 +1,5 @@
 name: Bug Report
-description: Report a bug to help us improve Grimmory
+description: Report a bug to help us improve Tobyshelf
 labels: ["needs-triage"]
 type: Bug
 body:
@@ -61,7 +61,7 @@ body:
       label: Your Setup
       description: Help us understand your environment
       placeholder: |
-        - Grimmory Version: v2.3.0
+        - Tobyshelf Version: v2.3.0
         - OS: macOS Sonoma 14.2
         - Browser: Chrome 120
         - Installation: Docker

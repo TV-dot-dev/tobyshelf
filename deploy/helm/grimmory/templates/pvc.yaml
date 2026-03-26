@@ -5,8 +5,8 @@ metadata:
   annotations:
     helm.sh/resource-policy: keep
   labels:
-    app.kubernetes.io/name: {{ include "grimmory.fullname" . }}
-  name: {{ include "grimmory.fullname" . }}-data
+    app.kubernetes.io/name: {{ include "tobyshelf.fullname" . }}
+  name: {{ include "tobyshelf.fullname" . }}-data
 spec:
   accessModes:
     - ReadWriteOnce
@@ -22,8 +22,8 @@ metadata:
   annotations:
     helm.sh/resource-policy: keep
   labels:
-    app.kubernetes.io/name: {{ include "grimmory.fullname" . }}
-  name: {{ include "grimmory.fullname" . }}-books
+    app.kubernetes.io/name: {{ include "tobyshelf.fullname" . }}
+  name: {{ include "tobyshelf.fullname" . }}-books
 spec:
   accessModes:
     - ReadWriteOnce

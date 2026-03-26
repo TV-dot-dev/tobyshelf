@@ -92,7 +92,7 @@
       "moreActions": "Дополнительные действия",
       "organizeFile": "Организовать файл",
       "readStatus": "Статус чтения",
-      "resetGrimmoryProgress": "Сбросить прогресс Grimmory",
+      "resetTobyshelfProgress": "Сбросить прогресс Tobyshelf",
       "resetKOReaderProgress": "Сбросить прогресс KOReader",
       "book": "Книга",
       "loading": "Загрузка..."
@@ -113,10 +113,10 @@
       "readStatusFailedSummary": "Ошибка обновления",
       "readStatusFailedDetail": "Не удалось обновить статус чтения.",
       "progressResetSummary": "Прогресс сброшен",
-      "progressResetGrimmoryDetail": "Прогресс чтения Grimmory был сброшен.",
+      "progressResetTobyshelfDetail": "Прогресс чтения Tobyshelf был сброшен.",
       "progressResetKOReaderDetail": "Прогресс чтения KOReader был сброшен.",
       "progressResetFailedSummary": "Ошибка",
-      "progressResetGrimmoryFailedDetail": "Не удалось сбросить прогресс Grimmory.",
+      "progressResetTobyshelfFailedDetail": "Не удалось сбросить прогресс Tobyshelf.",
       "progressResetKOReaderFailedDetail": "Не удалось сбросить прогресс KOReader.",
       "coverRegenSuccessSummary": "Успешно",
       "coverRegenSuccessDetail": "Пересоздание обложки начато",
@@ -197,7 +197,7 @@
       "setContentRating": "Установить рейтинг контента",
       "clearContentRating": "Очистить рейтинг контента",
       "removeFromAllShelves": "Убрать со всех полок",
-      "resetGrimmoryProgress": "Сбросить прогресс Grimmory",
+      "resetTobyshelfProgress": "Сбросить прогресс Tobyshelf",
       "resetKOReaderProgress": "Сбросить прогресс KOReader"
     },
     "confirm": {
@@ -213,7 +213,7 @@
       "clearContentRatingHeader": "Подтверждение очистки рейтинга контента",
       "unshelveMessage": "Вы уверены, что хотите убрать {{ count }} книг(у/и) со ВСЕХ их полок?",
       "unshelveHeader": "Подтверждение снятия с полки",
-      "resetGrimmoryMessage": "Вы уверены, что хотите сбросить прогресс чтения Grimmory для {{ count }} книг(и)?",
+      "resetTobyshelfMessage": "Вы уверены, что хотите сбросить прогресс чтения Tobyshelf для {{ count }} книг(и)?",
       "resetKOReaderMessage": "Вы уверены, что хотите сбросить прогресс чтения KOReader для {{ count }} книг(и)?",
       "resetHeader": "Подтверждение сброса"
     },
@@ -238,7 +238,7 @@
       "unshelveSuccessDetail": "Книги убраны со всех полок",
       "unshelveFailedDetail": "Не удалось обновить полки книг",
       "progressResetSummary": "Прогресс сброшен",
-      "grimmoryProgressResetDetail": "Прогресс чтения Grimmory был сброшен.",
+      "tobyshelfProgressResetDetail": "Прогресс чтения Tobyshelf был сброшен.",
       "koreaderProgressResetDetail": "Прогресс чтения KOReader был сброшен.",
       "failedSummary": "Ошибка",
       "progressResetFailedDetail": "Не удалось сбросить прогресс."
@@ -250,7 +250,7 @@
       "settingContentRating": "Установка рейтинга контента для {{ count }} книг(и)...",
       "clearingContentRating": "Очистка рейтинга контента для {{ count }} книг(и)...",
       "removingFromShelves": "Удаление {{ count }} книг(и) с полок...",
-      "resettingGrimmoryProgress": "Сброс прогресса Grimmory для {{ count }} книг(и)...",
+      "resettingTobyshelfProgress": "Сброс прогресса Tobyshelf для {{ count }} книг(и)...",
       "resettingKOReaderProgress": "Сброс прогресса KOReader для {{ count }} книг(и)..."
     }
   },

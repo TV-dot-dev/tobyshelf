@@ -1,6 +1,6 @@
-# Grimmory UI
+# Tobyshelf UI
 
-The `frontend` project is the Angular frontend for Grimmory. It owns the browser application, component styling, client-side routing, stateful UI interactions, and the compiled bundle that is packaged into the current production image.
+The `frontend` project is the Angular frontend for Tobyshelf. It owns the browser application, component styling, client-side routing, stateful UI interactions, and the compiled bundle that is packaged into the current production image.
 
 ## Stack
 
@@ -57,7 +57,7 @@ just coverage
 just lint
 ```
 
-The production output is written to `dist/grimmory/` and is consumed by the backend packaging flow when building the all-in-one production image.
+The production output is written to `dist/tobyshelf/` and is consumed by the backend packaging flow when building the all-in-one production image.
 
 Use `just ci-check` when you want the stricter CI-style flow from a clean install, including the severity-gated audit step.
 

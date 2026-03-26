@@ -1,6 +1,6 @@
 {
   "title": "Gebruikersbeheer",
-  "description": "Beheer Grimmory-gebruikers, hun rechten en bibliotheektoegang. Configureer gebruikersrollen en mogelijkheden voor uw boekcollectie.",
+  "description": "Beheer Tobyshelf-gebruikers, hun rechten en bibliotheektoegang. Configureer gebruikersrollen en mogelijkheden voor uw boekcollectie.",
   "currentUsers": {
     "sectionTitle": "Huidige gebruikers",
     "sectionDesc": "Bekijk en beheer alle geregistreerde gebruikers, hun rechten en bibliotheektoegang.",
@@ -70,7 +70,7 @@
     "koreaderSync": "KOReader-synchronisatie",
     "koboSync": "Kobo-synchronisatie",
     "opdsFeedAccess": "",
-    "bulkResetGrimmory": "Bulk Grimmory-leesvoortgang resetten",
+    "bulkResetTobyshelf": "Bulk Tobyshelf-leesvoortgang resetten",
     "bulkResetKoreader": "Bulk KOReader-leesvoortgang resetten",
     "bulkResetReadStatus": "Bulk boekleesstatus resetten"
   },

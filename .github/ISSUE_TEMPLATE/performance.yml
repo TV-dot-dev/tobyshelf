@@ -1,5 +1,5 @@
 name: Performance
-description: Report a performance issue or propose a performance improvement for Grimmory
+description: Report a performance issue or propose a performance improvement for Tobyshelf
 labels: ["needs-triage"]
 type: Performance
 body:

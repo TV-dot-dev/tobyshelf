@@ -9,8 +9,8 @@ export interface KoreaderUser {
   username: string;
   password: string;
   syncEnabled: boolean;
-  syncWithGrimmoryReader?: boolean;
-  // TODO(grimmory-cleanup): Remove once the backend no longer returns the legacy Booklore KOReader sync field.
+  syncWithTobyshelfReader?: boolean;
+  // TODO(tobyshelf-cleanup): Remove once the backend no longer returns the legacy Booklore KOReader sync field.
   syncWithBookloreReader?: boolean;
 }
 
@@ -38,11 +38,11 @@ export class KoreaderService {
     });
   }
 
-  toggleSyncProgressWithGrimmoryReader(enabled: boolean): Observable<void> {
-    return this.http.patch<void>(`${this.url}/me/sync-progress-with-grimmory`, null, {
+  toggleSyncProgressWithTobyshelfReader(enabled: boolean): Observable<void> {
+    return this.http.patch<void>(`${this.url}/me/sync-progress-with-tobyshelf`, null, {
       params: {enabled: enabled.toString()}
     }).pipe(
-      // TODO(grimmory-cleanup): Remove the legacy endpoint fallback after all supported backends expose the Grimmory route.
+      // TODO(tobyshelf-cleanup): Remove the legacy endpoint fallback after all supported backends expose the Tobyshelf route.
       catchError(() => this.http.patch<void>(`${this.url}/me/sync-progress-with-booklore`, null, {
         params: {enabled: enabled.toString()}
       }))

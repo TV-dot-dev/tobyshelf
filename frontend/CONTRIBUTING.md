@@ -1,4 +1,4 @@
-# Contributing to Grimmory UI
+# Contributing to Tobyshelf UI
 
 This document covers frontend-specific development and review expectations for `frontend`.
 
@@ -45,7 +45,7 @@ just ui lint
 
 - Update all relevant locale files when adding or renaming translation keys.
 - Keep translation-key changes separate from bulk JSON reformatting whenever practical.
-- Prefer Grimmory naming for UI-visible labels and keys, while preserving compatibility shims only when they are still required by existing backend or migration behavior.
+- Prefer Tobyshelf naming for UI-visible labels and keys, while preserving compatibility shims only when they are still required by existing backend or migration behavior.
 
 ## Validation Before Opening a PR
 

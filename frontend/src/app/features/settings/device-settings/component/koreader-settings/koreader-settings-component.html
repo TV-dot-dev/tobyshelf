@@ -49,16 +49,16 @@
             <div class="setting-item">
               <div class="setting-info">
                 <div class="setting-label-row">
-                  <span class="setting-label">{{ t('koreader.syncWithGrimmory') }}</span>
+                  <span class="setting-label">{{ t('koreader.syncWithTobyshelf') }}</span>
                   <p-toggle-switch
-                    name="syncWithGrimmoryReader"
-                    [(ngModel)]="syncWithGrimmoryReader"
-                    (ngModelChange)="onToggleSyncWithGrimmoryReader($event)"
-                    inputId="syncWithGrimmoryReader"
+                    name="syncWithTobyshelfReader"
+                    [(ngModel)]="syncWithTobyshelfReader"
+                    (ngModelChange)="onToggleSyncWithTobyshelfReader($event)"
+                    inputId="syncWithTobyshelfReader"
                     [disabled]="!credentialsSaved || !koReaderSyncEnabled">
                   </p-toggle-switch>
                 </div>
-                <p class="setting-description" [innerHTML]="t('koreader.syncWithGrimmoryDesc')">
+                <p class="setting-description" [innerHTML]="t('koreader.syncWithTobyshelfDesc')">
                 </p>
               </div>
             </div>

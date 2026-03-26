@@ -1,6 +1,6 @@
 {
-  "name": "Grimmory",
-  "short_name": "Grimmory",
+  "name": "Tobyshelf",
+  "short_name": "Tobyshelf",
   "display": "fullscreen",
   "display_override": ["fullscreen", "standalone", "browser"],
   "scope": "./",

@@ -32,7 +32,7 @@ export class KoreaderSettingsComponent {
   editMode = true;
   showPassword = false;
   koReaderSyncEnabled = false;
-  syncWithGrimmoryReader = false;
+  syncWithTobyshelfReader = false;
   koReaderUsername = '';
   koReaderPassword = '';
   credentialsSaved = false;
@@ -66,7 +66,7 @@ export class KoreaderSettingsComponent {
         this.koReaderUsername = koreaderUser.username;
         this.koReaderPassword = koreaderUser.password;
         this.koReaderSyncEnabled = koreaderUser.syncEnabled;
-        this.syncWithGrimmoryReader = koreaderUser.syncWithGrimmoryReader ?? koreaderUser.syncWithBookloreReader ?? false;
+        this.syncWithTobyshelfReader = koreaderUser.syncWithTobyshelfReader ?? koreaderUser.syncWithBookloreReader ?? false;
         this.credentialsSaved = true;
       },
       error: err => {
@@ -107,21 +107,21 @@ export class KoreaderSettingsComponent {
     });
   }
 
-  onToggleSyncWithGrimmoryReader(enabled: boolean) {
-    this.koreaderService.toggleSyncProgressWithGrimmoryReader(enabled).subscribe({
+  onToggleSyncWithTobyshelfReader(enabled: boolean) {
+    this.koreaderService.toggleSyncProgressWithTobyshelfReader(enabled).subscribe({
       next: () => {
-        this.syncWithGrimmoryReader = enabled;
+        this.syncWithTobyshelfReader = enabled;
         this.messageService.add({
           severity: 'success',
           summary: this.t.translate('settingsDevice.koreader.syncUpdated'),
-          detail: enabled ? this.t.translate('settingsDevice.koreader.grimmoryReaderEnabled') : this.t.translate('settingsDevice.koreader.grimmoryReaderDisabled')
+          detail: enabled ? this.t.translate('settingsDevice.koreader.tobyshelfReaderEnabled') : this.t.translate('settingsDevice.koreader.tobyshelfReaderDisabled')
         });
       },
       error: () => {
         this.messageService.add({
           severity: 'error',
           summary: this.t.translate('settingsDevice.koreader.syncUpdateFailed'),
-          detail: this.t.translate('settingsDevice.koreader.grimmoryReaderError')
+          detail: this.t.translate('settingsDevice.koreader.tobyshelfReaderError')
         });
       }
     });

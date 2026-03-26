@@ -2,7 +2,7 @@
 set -euo pipefail
 
 # =======================
-# Multi-arch Docker Build & Push for Grimmory
+# Multi-arch Docker Build & Push for Tobyshelf
 # =======================
 
 # Ensure a version/tag is passed
@@ -14,7 +14,7 @@ fi
 
 VERSION="$1"
 
-echo "Building Grimmory with multi-arch version: $VERSION"
+echo "Building Tobyshelf with multi-arch version: $VERSION"
 
 # Ensure Docker Buildx builder exists and is used
 docker buildx create --use --name multiarch-builder || true
@@ -22,8 +22,8 @@ docker buildx create --use --name multiarch-builder || true
 # Build and push multi-arch Docker image
 docker buildx build \
   --platform linux/amd64,linux/arm64 \
-  -t grimmory/grimmory:"$VERSION" \
+  -t tobyshelf/tobyshelf:"$VERSION" \
   --push \
   .
 
-echo "Multi-arch Docker image grimmory/grimmory:$VERSION pushed successfully!"
+echo "Multi-arch Docker image tobyshelf/tobyshelf:$VERSION pushed successfully!"

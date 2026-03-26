@@ -16,19 +16,19 @@ This document tracks the remaining Booklore-era frontend references that should 
 
 ## Remove After the Local Storage Migration Window
 
-- [frontend/src/app/core/config/language-initializer.ts](/Users/james/Projects/grimmory/grimmory/frontend/src/app/core/config/language-initializer.ts)
+- [frontend/src/app/core/config/language-initializer.ts](/Users/james/Projects/tobyshelf/tobyshelf/frontend/src/app/core/config/language-initializer.ts)
   - `LEGACY_LANG_STORAGE_KEY = 'booklore-lang'`
   - Remove after at least one stable release cycle has shipped with the migration logic and maintainers are comfortable dropping the legacy browser key.
 
 ## Remove After Backend API Contracts Are Renamed
 
-- [frontend/src/app/shared/constants/reset-progress-type.ts](/Users/james/Projects/grimmory/grimmory/frontend/src/app/shared/constants/reset-progress-type.ts)
-  - `GRIMMORY: 'BOOKLORE'`
-  - Remove after the backend emits a Grimmory-native reset-progress type.
-- [frontend/src/app/features/settings/user-management/user.service.ts](/Users/james/Projects/grimmory/grimmory/frontend/src/app/features/settings/user-management/user.service.ts)
+- [frontend/src/app/shared/constants/reset-progress-type.ts](/Users/james/Projects/tobyshelf/tobyshelf/frontend/src/app/shared/constants/reset-progress-type.ts)
+  - `TOBYSHELF: 'BOOKLORE'`
+  - Remove after the backend emits a Tobyshelf-native reset-progress type.
+- [frontend/src/app/features/settings/user-management/user.service.ts](/Users/james/Projects/tobyshelf/tobyshelf/frontend/src/app/features/settings/user-management/user.service.ts)
   - Legacy Booklore permission and create-user aliases.
-  - Remove after the backend accepts only Grimmory naming.
-- [frontend/src/app/features/settings/device-settings/component/koreader-settings/koreader.service.ts](/Users/james/Projects/grimmory/grimmory/frontend/src/app/features/settings/device-settings/component/koreader-settings/koreader.service.ts)
+  - Remove after the backend accepts only Tobyshelf naming.
+- [frontend/src/app/features/settings/device-settings/component/koreader-settings/koreader.service.ts](/Users/james/Projects/tobyshelf/tobyshelf/frontend/src/app/features/settings/device-settings/component/koreader-settings/koreader.service.ts)
   - Legacy Booklore KOReader sync field and fallback endpoint.
   - Remove after the backend no longer returns or expects the Booklore alias.
 

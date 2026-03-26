@@ -1,6 +1,6 @@
 apiVersion: v2
-name: grimmory
-description: A Helm chart for [Grimmory](https://github.com/grimmory-tools/grimmory)
+name: tobyshelf
+description: A Helm chart for [Tobyshelf](https://github.com/tobyshelf-tools/tobyshelf)
 # A chart can be either an 'application' or a 'library' chart.
 #
 # Application charts are a collection of templates that can be packaged into versioned archives

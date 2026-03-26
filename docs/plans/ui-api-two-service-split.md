@@ -4,7 +4,7 @@
 
 Step 0: write this plan to `docs/plans/ui-api-two-service-split.md`.
 
-After the first stable Grimmory release that stays faithful to the original Booklore deployment shape, evaluate a runtime split that stops serving the Angular SPA from the Spring Boot jar.
+After the first stable Tobyshelf release that stays faithful to the original Booklore deployment shape, evaluate a runtime split that stops serving the Angular SPA from the Spring Boot jar.
 
 The target shape is:
 
@@ -39,18 +39,18 @@ This is intentionally a phase-two simplification plan, not a first-release block
 
 ### Runtime Topology
 
-- `grimmory-web`
+- `tobyshelf-web`
   - serves the compiled Angular frontend
   - handles SPA fallback to `index.html`
   - proxies `/api/**`, `/komga/**`, and `/ws` to the API service
-- `grimmory-api`
+- `tobyshelf-api`
   - runs the Spring Boot application
   - exposes backend endpoints only
   - no longer owns static SPA asset serving
 
 ### Likely Technology Choice
 
-- Prefer `caddy` or `nginx` inside the `grimmory-web` image.
+- Prefer `caddy` or `nginx` inside the `tobyshelf-web` image.
 - Do not introduce `pm2` unless the frontend becomes a real Node runtime application later.
 - Keep the frontend static.
 
@@ -69,7 +69,7 @@ This is intentionally a phase-two simplification plan, not a first-release block
 - Introduces an extra service for operators to understand.
 - Requires careful websocket and auth proxy behavior.
 - Requires documentation updates for Compose, Helm, and Podman examples.
-- Risks mixing an architectural cleanup into the same milestone as the first Grimmory continuation release.
+- Risks mixing an architectural cleanup into the same milestone as the first Tobyshelf continuation release.
 
 ## Validation Against Current App Shape
 
@@ -115,29 +115,29 @@ That means the system already wants a same-origin reverse proxy setup. The main 
 
 ### Option A: Replace the Single Image
 
-- Publish `grimmory-web` and `grimmory-api` only.
+- Publish `tobyshelf-web` and `tobyshelf-api` only.
 - Simplest architecture.
 - Highest operator-facing change.
 
 ### Option B: Keep a Compatibility Image
 
 - Publish:
-  - `grimmory`
-  - `grimmory-web`
-  - `grimmory-api`
+  - `tobyshelf`
+  - `tobyshelf-web`
+  - `tobyshelf-api`
 - The compatibility image keeps the existing single-container story alive while the split deployment matures.
 - Higher maintenance burden, but smoother migration path.
 
 ### Recommended Direction
 
-- Do not change the first Grimmory release shape.
+- Do not change the first Tobyshelf release shape.
 - After that release, evaluate whether:
   - the split should become the default deployment shape,
   - and whether a compatibility image is worth the extra maintenance.
 
 ## Sequencing Recommendation
 
-1. Ship the first Grimmory release in the current all-in-one shape.
+1. Ship the first Tobyshelf release in the current all-in-one shape.
 2. Stabilize the current Docker and Gradle packaging path enough that the release is trustworthy.
 3. Prototype the split runtime in a branch:
    - separate API image,
@@ -164,7 +164,7 @@ That means the system already wants a same-origin reverse proxy setup. The main 
 
 ## Assumptions
 
-- The first Grimmory release should remain close to the original Booklore operational model.
+- The first Tobyshelf release should remain close to the original Booklore operational model.
 - Self-hosters are the primary audience, so deployment simplicity still matters more than architectural purity.
 - A two-service model is acceptable; a mandatory three-container model is not the target.
 - The frontend remains a static SPA rather than a server-rendered Node application.

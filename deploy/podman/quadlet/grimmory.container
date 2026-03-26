@@ -1,25 +1,25 @@
 [Unit]
-Description=Grimmory container
-Requires=grimmory-db.container
-After=grimmory-db.container
+Description=Tobyshelf container
+Requires=tobyshelf-db.container
+After=tobyshelf-db.container
 
 [Container]
-ContainerName=grimmory
-Image=ghcr.io/grimmory-tools/grimmory:v0.38.2
-Pod=grimmory.pod
+ContainerName=tobyshelf
+Image=ghcr.io/tobyshelf-tools/tobyshelf:v0.38.2
+Pod=tobyshelf.pod
 AutoUpdate=registry
 Pull=always
 
-Volume=grimmory-data:/app/data
+Volume=tobyshelf-data:/app/data
 # note the :z is important for selinux systems
 # Volume=YOUR MOUNTS:/books:z
 # Volume=YOUR MOUNTS:/bookdrop:z
 
 
 Environment=TZ=Etc/UTC
-Secret=grimmory_db_pass,type=env,target=DATABASE_PASSWORD
-Environment=DATABASE_URL=jdbc:mariadb://localhost:3306/grimmory
-Environment=DATABASE_USERNAME=grimmory
+Secret=tobyshelf_db_pass,type=env,target=DATABASE_PASSWORD
+Environment=DATABASE_URL=jdbc:mariadb://localhost:3306/tobyshelf
+Environment=DATABASE_USERNAME=tobyshelf
 HealthCmd=wget -q -O - http://localhost:6060/api/v1/healthcheck
 HealthInterval=1m
 HealthRetries=5

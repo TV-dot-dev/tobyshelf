@@ -5,7 +5,7 @@
 You can report security vulnerabilities through two channels:
 
 1. **GitHub Security Advisory**:
-   - Navigate to the [Security tab](https://github.com/grimmory-tools/grimmory/security) in our repository
+   - Navigate to the [Security tab](https://github.com/tobyshelf-tools/tobyshelf/security) in our repository
    - Click on "Report a vulnerability"
    - Provide a detailed description of the vulnerability
 
@@ -33,23 +33,23 @@ When reporting a vulnerability, please provide:
 
 ## Supported Versions
 
-Only the latest version of Grimmory is supported for security updates. We do not backport security fixes to older versions.
+Only the latest version of Tobyshelf is supported for security updates. We do not backport security fixes to older versions.
 
 | Version | Supported          |
 | ------- | ------------------ |
 | Latest  | :white_check_mark: |
 | Older   | :x:               |
 
-**Please note:** Before reporting a security issue, ensure you are using the latest version of Grimmory. Security reports for older versions will not be accepted.
+**Please note:** Before reporting a security issue, ensure you are using the latest version of Tobyshelf. Security reports for older versions will not be accepted.
 
 ## Security Best Practices
 
-When deploying Grimmory:
+When deploying Tobyshelf:
 
 1. Always use the latest version
 2. Use strong, unique passwords for admin accounts
 3. Decrease permissions for any external services or integrations
-4. Run Grimmory in a secure environment (e.g., behind a firewall, with proper network segmentation)
+4. Run Tobyshelf in a secure environment (e.g., behind a firewall, with proper network segmentation)
 5. Regularly check for and apply updates
 
 > [!NOTE]

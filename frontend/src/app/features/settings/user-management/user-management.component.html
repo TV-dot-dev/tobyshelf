@@ -384,8 +384,8 @@
                         </h5>
                         <div class="permission-items">
                           <div class="permission-item">
-                            <p-checkbox [binary]="true" [(ngModel)]="user.permissions.canBulkResetGrimmoryReadProgress" [disabled]="isPermissionDisabled(user)" inputId="bulkresetgrimmory-{{user.id}}"></p-checkbox>
-                            <label [for]="'bulkresetgrimmory-'+user.id">{{ t('perms.bulkResetGrimmory') }}</label>
+                            <p-checkbox [binary]="true" [(ngModel)]="user.permissions.canBulkResetTobyshelfReadProgress" [disabled]="isPermissionDisabled(user)" inputId="bulkresettobyshelf-{{user.id}}"></p-checkbox>
+                            <label [for]="'bulkresettobyshelf-'+user.id">{{ t('perms.bulkResetTobyshelf') }}</label>
                           </div>
                           <div class="permission-item">
                             <p-checkbox [binary]="true" [(ngModel)]="user.permissions.canBulkResetKoReaderReadProgress" [disabled]="isPermissionDisabled(user)" inputId="bulkresetkoreader-{{user.id}}"></p-checkbox>

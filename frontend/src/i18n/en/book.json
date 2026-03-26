@@ -92,7 +92,7 @@
       "moreActions": "More Actions",
       "organizeFile": "Organize File",
       "readStatus": "Read Status",
-      "resetGrimmoryProgress": "Reset Grimmory Progress",
+      "resetTobyshelfProgress": "Reset Tobyshelf Progress",
       "resetKOReaderProgress": "Reset KOReader Progress",
       "book": "Book",
       "loading": "Loading..."
@@ -116,10 +116,10 @@
       "readStatusFailedSummary": "Update Failed",
       "readStatusFailedDetail": "Could not update read status.",
       "progressResetSummary": "Progress Reset",
-      "progressResetGrimmoryDetail": "Grimmory reading progress has been reset.",
+      "progressResetTobyshelfDetail": "Tobyshelf reading progress has been reset.",
       "progressResetKOReaderDetail": "KOReader reading progress has been reset.",
       "progressResetFailedSummary": "Failed",
-      "progressResetGrimmoryFailedDetail": "Could not reset Grimmory progress.",
+      "progressResetTobyshelfFailedDetail": "Could not reset Tobyshelf progress.",
       "progressResetKOReaderFailedDetail": "Could not reset KOReader progress.",
       "coverRegenSuccessSummary": "Success",
       "coverRegenSuccessDetail": "Cover regeneration started",
@@ -201,7 +201,7 @@
       "setContentRating": "Set Content Rating",
       "clearContentRating": "Clear Content Rating",
       "removeFromAllShelves": "Remove from all shelves",
-      "resetGrimmoryProgress": "Reset Grimmory Progress",
+      "resetTobyshelfProgress": "Reset Tobyshelf Progress",
       "resetKOReaderProgress": "Reset KOReader Progress"
     },
     "confirm": {
@@ -217,7 +217,7 @@
       "clearContentRatingHeader": "Confirm Clear Content Rating",
       "unshelveMessage": "Are you sure you want to remove {{ count }} book(s) from ALL their shelves?",
       "unshelveHeader": "Confirm Unshelve",
-      "resetGrimmoryMessage": "Are you sure you want to reset Grimmory reading progress for {{ count }} book(s)?",
+      "resetTobyshelfMessage": "Are you sure you want to reset Tobyshelf reading progress for {{ count }} book(s)?",
       "resetKOReaderMessage": "Are you sure you want to reset KOReader reading progress for {{ count }} book(s)?",
       "resetHeader": "Confirm Reset"
     },
@@ -242,7 +242,7 @@
       "unshelveSuccessDetail": "Books removed from all shelves",
       "unshelveFailedDetail": "Failed to update books shelves",
       "progressResetSummary": "Progress Reset",
-      "grimmoryProgressResetDetail": "Grimmory reading progress has been reset.",
+      "tobyshelfProgressResetDetail": "Tobyshelf reading progress has been reset.",
       "koreaderProgressResetDetail": "KOReader reading progress has been reset.",
       "failedSummary": "Failed",
       "progressResetFailedDetail": "Could not reset progress."
@@ -254,7 +254,7 @@
       "settingContentRating": "Setting content rating for {{ count }} book(s)...",
       "clearingContentRating": "Clearing content rating for {{ count }} book(s)...",
       "removingFromShelves": "Removing {{ count }} book(s) from shelves...",
-      "resettingGrimmoryProgress": "Resetting Grimmory progress for {{ count }} book(s)...",
+      "resettingTobyshelfProgress": "Resetting Tobyshelf progress for {{ count }} book(s)...",
       "resettingKOReaderProgress": "Resetting KOReader progress for {{ count }} book(s)..."
     }
   },

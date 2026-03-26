@@ -314,8 +314,8 @@ export class AppMenuComponent implements OnInit {
   getVersionUrl(version: string | undefined): string {
     if (!version) return '#';
     return version.startsWith('v')
-      ? `https://github.com/grimmory-tools/grimmory/releases/tag/${version}`
-      : `https://github.com/grimmory-tools/grimmory/commit/${version}`;
+      ? `https://github.com/tobyshelf-tools/tobyshelf/releases/tag/${version}`
+      : `https://github.com/tobyshelf-tools/tobyshelf/commit/${version}`;
   }
 
   isSemanticVersion(version: string | undefined): boolean {

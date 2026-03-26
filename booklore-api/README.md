@@ -1,6 +1,6 @@
-# Grimmory API
+# Tobyshelf API
 
-The `booklore-api` project is the Spring Boot backend for Grimmory. It owns the HTTP API, database migrations, background processing, authentication, and the packaged runtime jar that the production container runs.
+The `booklore-api` project is the Spring Boot backend for Tobyshelf. It owns the HTTP API, database migrations, background processing, authentication, and the packaged runtime jar that the production container runs.
 
 ## Stack
 

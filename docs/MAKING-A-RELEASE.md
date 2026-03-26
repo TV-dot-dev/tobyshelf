@@ -86,10 +86,10 @@ When `semantic-release` creates a release, [`.github/workflows/release-main.yml`
 That workflow will:
 
 - build the multi-architecture container image,
-- publish `grimmory/grimmory:vX.Y.Z`,
-- publish `grimmory/grimmory:latest`,
-- publish `ghcr.io/grimmory-tools/grimmory:vX.Y.Z`,
-- publish `ghcr.io/grimmory-tools/grimmory:latest`,
+- publish `tobyshelf/tobyshelf:vX.Y.Z`,
+- publish `tobyshelf/tobyshelf:latest`,
+- publish `ghcr.io/tobyshelf-tools/tobyshelf:vX.Y.Z`,
+- publish `ghcr.io/tobyshelf-tools/tobyshelf:latest`,
 - and flip the GitHub release from draft to published.
 
 ## Nightly Builds
