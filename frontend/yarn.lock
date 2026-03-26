@@ -5299,9 +5299,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"grimmory@workspace:.":
+"tobyshelf@workspace:.":
   version: 0.0.0-use.local
-  resolution: "grimmory@workspace:."
+  resolution: "tobyshelf@workspace:."
   dependencies:
     "@analogjs/vite-plugin-angular": "npm:^2.3.0"
     "@analogjs/vitest-angular": "npm:^2.3.0"
