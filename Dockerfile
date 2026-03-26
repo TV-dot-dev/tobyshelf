@@ -7,7 +7,7 @@ COPY frontend/package.json frontend/yarn.lock ./
 
 RUN corepack enable
 RUN --mount=type=cache,target=/workspace/.yarn/cache \
-    corepack yarn install --immutable
+    corepack yarn install
 
 COPY frontend/ ./
 RUN --mount=type=cache,target=/workspace/.yarn/cache \
